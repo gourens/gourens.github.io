@@ -40,12 +40,15 @@ font-family:Aptos, "Segoe UI", Calibri, sans-serif;
 }
 
 .content{
+    width:100%;
+    max-width:900px;
     margin-left:340px;
     padding:50px;
-    max-width:900px;
-    background:#fff;
     min-height:100vh;
+    background:#fff;
+    box-sizing:border-box;
 }
+
 
 .profile-photo{
     width:180px;
