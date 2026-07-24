@@ -86,10 +86,10 @@ h2{
     margin:0 auto 25px;
     width:180px;
 }
+}
+
     .sidebar nav a.active,
 .sidebar nav a:hover,
 a{
     color:#ff6b6b;
-}
-
 }
