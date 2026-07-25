@@ -111,8 +111,11 @@ h2{
     display:block;
 }
 
+.intro{
+    display:block;
+}
+
 .profile-photo{
-    float:none;
     display:block;
     margin:0 auto 25px;
     width:180px;
