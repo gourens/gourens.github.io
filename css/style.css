@@ -79,12 +79,14 @@ font-family:"Source Sans 3", Arial, sans-serif;
 
 .research-interests{
     margin:0;
-    font-size:1.2rem;
-    font-weight:600;
+    font-size:1.1rem;
+    line-height:1.5;
 }
 
-.research-interests span{
-    font-weight:400;
+.research-interests strong{
+    display:block;
+    margin-bottom:4px;
+    font-size:1.15rem;
 }
 
 h1{
