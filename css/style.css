@@ -1,8 +1,8 @@
 body{
     margin:0;
 font-family:"Source Sans 3", Arial, sans-serif;    
-    background:#f5f5f5;
-    color: #333333;
+    background:#f7f9fc;
+    color: #13233a;
     line-height:1.6;
 }
 
@@ -13,7 +13,7 @@ font-family:"Source Sans 3", Arial, sans-serif;
 
 .sidebar{
     width:280px;
-    background:#38424f;
+    background:#0f2747;
     color:#fff;
     padding:40px 30px;
     position:fixed;
@@ -36,7 +36,7 @@ font-family:"Source Sans 3", Arial, sans-serif;
 
 .sidebar nav a.active,
 .sidebar nav a:hover{
-    color:#ff6b6b;
+    color:#ff6b8a;
 }
 
 .content{
@@ -45,7 +45,7 @@ font-family:"Source Sans 3", Arial, sans-serif;
     margin-left:340px;
     padding:50px;
     min-height:100vh;
-    background:#fff;
+    background:#ffffff;
     box-sizing:border-box;
 }
 
@@ -60,7 +60,7 @@ font-family:"Source Sans 3", Arial, sans-serif;
 .profile-photo{
     width:180px;
     height:auto;
-    border:1px solid #ddd;
+    border:1px solid #d8e0ea;
     border-radius:4px;
     flex-shrink:0;
 }
@@ -125,7 +125,7 @@ h2{
     .sidebar nav a.active,
 .sidebar nav a:hover,
 a{
-    color:#ff6b6b;
+    color:#ff6b8a;
 }
 
 h3{
