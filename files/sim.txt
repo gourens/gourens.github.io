@@ -1,0 +1,31 @@
+simulacion
+
+clear 
+global repetir=100
+matrix A=J($repetir, 3,.) //matriz para guardar resultados
+
+forvalues x=1/$repetir {
+di in red `x'
+set obs 500000
+g experiencia=runiform() //genera una variable aleatoria uniforme entre 0 y 1
+g esfuerzo=runiform()
+g habilidad=runiform()
+g suerte=runiform()  
+g score=experiencia+esfuerzo+habilidad+suerte
+g score_no_suerte=experiencia+esfuerzo+habilidad
+gsort- score_no_suerte
+g rank_score_no=_n
+gsort- score
+g rank_score=_n
+keep if _n<=10
+sum suerte
+mat A[`x',1]=r(mean)
+sum esfuerzo
+mat A[`x',2]=r(mean)
+count if rank_score_no<=10
+mat A[`x',3]=r(N)
+drop experiencia-rank_score
+}
+svmat A
+sum
+saveold final.dta, replace
